@@ -1,7 +1,7 @@
 <html>
 	<?php include "header.php" ?>
 		 
-<body class="login-background" background="imagens/FundoIndex.jpg.jpg">
+<body class="login-background" background="imagens/FundoIndex.jpg">
 		
 		<div class="hero">
         <hgroup>
