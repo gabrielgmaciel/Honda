@@ -1,7 +1,7 @@
 <html>
         <?php include "header.php"; ?>
 
-        <body class="login-background" background="imagens/fundo.png">
+        <body background="imagens/fundo.png">
             <div>
                 <center>
                     <table width="100%" height="108">
