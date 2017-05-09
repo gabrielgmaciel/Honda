@@ -64,45 +64,42 @@
                 <button class="btn btn-default filter-button" data-filter="irrigation">algumas Imagens</button>
             </div>
 
+
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="imagens/civic/01.jpg" class="img-responsive">
+                <img src="imagens/accord/01.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="imagens/civic/02.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="imagens/civic/02.jpg" class="img-responsive">
+                <img src="imagens/accord/04.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="imagens/civic/03.jpg" class="img-responsive">
+                <img src="imagens/accord/02.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="imagens/civic/04.jpg" class="img-responsive">
+                <img src="imagens/accord/05.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="imagens/civic/05.jpg" class="img-responsive">
+                <img src="imagens/accord/06.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="imagens/civic/06.jpg" class="img-responsive">
+                <img src="imagens/accord/07.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="imagens/civic/07.jpg" class="img-responsive">
+                <img src="imagens/accord/09.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="imagens/civic/09.jpg" class="img-responsive">
+                <img src="imagens/accord/10.jpg" class="img-responsive">
             </div>
 
-
-
-
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="imagens/accord/03.jpg" class="img-responsive">
+            </div>
 
         </div>
     </div>
@@ -113,7 +110,7 @@
             <div class="well well-sm">
                 <div class="row">
                     <div class="col-sm-6 col-md-4">
-                        <img src="imagens/civic/06.jpg" alt="" class="img-rounded img-responsive" /> <br>
+                        <img src="imagens/accord/06.jpg" alt="" class="img-rounded img-responsive" /> <br>
                         <center><button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Comprar</button></center>
                     </div>
                     <div class="col-sm-6 col-md-8">
