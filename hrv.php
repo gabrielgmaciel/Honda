@@ -33,6 +33,59 @@
             $(this).addClass("active");
 
         });</script>
+    <style>
+        .gallery-title
+        {
+            font-size: 36px;
+            color: #787b80;
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 70px;
+        }
+        .gallery-title:after {
+            content: "";
+            position: absolute;
+            width: 7.5%;
+            left: 46.5%;
+            height: 45px;
+            border-bottom: 1px solid #5e5e5e;
+        }
+        .filter-button
+        {
+            font-size: 18px;
+            border: 1px solid #787b80#;
+            border-radius: 5px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 30px;
+
+        }
+        .filter-button:hover
+        {
+            font-size: 18px;
+            border: 1px solid #0f0f0f;
+            border-radius: 5px;
+            text-align: center;
+            color: #FFFFFF;
+            background-color: #787b80;
+
+        }
+        .btn-default:active .filter-button:active
+        {
+            background-color: #c0c0c0;
+            color: white;
+        }
+
+        .port-image
+        {
+            width: 100%;
+        }
+
+        .gallery_product
+        {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
 <div>
