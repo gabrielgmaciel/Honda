@@ -6967,24 +6967,72 @@ Image credits: unsplash.com
 
 /* --------------------------------------------------------------------------------------------------- */
 
-.modal-01 {
-  position: relative;
-  width: auto;
-  margin: 10px;
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.gallery-title
+{
+  font-size: 36px;
+  color: #42B32F;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 70px;
 }
-.modal-02 {
-  position: relative;
-  background-color: #fff;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: 6px;
-  outline: 0;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px;
+  border-bottom: 1px solid #5e5e5e;
 }
-.modal-03 {
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+.filter-button
+{
+  font-size: 18px;
+  border: 1px solid #42B32F;
+  border-radius: 5px;
+  text-align: center;
+  color: #42B32F;
+  margin-bottom: 30px;
+
 }
+.filter-button:hover
+{
+  font-size: 18px;
+  border: 1px solid #42B32F;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+  background-color: #42B32F;
+  color: white;
+}
+
+.port-image
+{
+  width: 100%;
+}
+
+.gallery_product
+{
+  margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.ns{padding-top:30px;}
+
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+small {
+  display: block;
+  line-height: 1.428571429;
+  color: #999;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
