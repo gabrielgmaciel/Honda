@@ -109,14 +109,6 @@
                 <h1 class="gallery-title">Galeria</h1>
             </div>
 
-            <div align="center">
-                <button class="btn btn-default filter-button" data-filter="all">Todas as Imagens</button>
-                <button class="btn btn-default filter-button" data-filter="hdpe">algumas Imagens</button>
-                <button class="btn btn-default filter-button" data-filter="sprinkle">algumas Imagens</button>
-                <button class="btn btn-default filter-button" data-filter="spray">algumas Imagens</button>
-                <button class="btn btn-default filter-button" data-filter="irrigation">algumas Imagens</button>
-            </div>
-
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
                 <img src="imagens/fit/01.jpg" class="img-responsive">
