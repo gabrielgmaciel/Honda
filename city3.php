@@ -177,41 +177,25 @@
                 <div class="preview col-md-6">
 
                     <div class="preview-pic tab-content">
-                        <div class="tab-pane active"><img src="imagens/fit/09.jpg" /></div>
+                        <div class="tab-pane active" id="pic-1"><img src="imagens/city/06.jpg" /></div>
                     </div>
                 </div>
                 <div class="details col-md-6">
-                    <h3 class="product-title">Honda Fit</h3>
-                    <div class="rating">
-                        <div class="stars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
+                    <center>
+                        <h3 class="product-title">Honda City</h3>
+                    </center>
+                    <br><br><br>
+                    <div>
+                        <center>
+                            <h4 class="price">Valor da entrada: <span>R$ 000.000,00</span></h4>
+                            <h4 class="price">Valor das parcelas: <span>24x </span><span>R$ 000.000,00</span></h4>
+                        </center>
                     </div>
-
-                    <p class="product-description">A Honda Automóveis do Brasil oferece, por um prazo de 2 anos a partir da Nota Fiscal de Vendas do veículo zero, o serviço de Assistência 24 horas, do qual poderá dispor, em caso de acidente, furto, roubo ou pane (de origem elétrica ou mecânica), com cobertura em qualquer parte do Brasil, Argentina, Uruguai ou Paraguai.</p>
-                    <h4 class="price">Preço do Veículo: <span>R$ 78.900,00</span></h4>
-                    <div class="form-group form-inline">
-                        <h4 class="sizes">Entrada:   <input type="number" class="form-control" id="entradaFit" placeholder="R$ 000.000,00"></h4>
-                        <h4 class="sizes">Parcelas:
-                            <select class="form-control" id="parcelaFit">
-                                <option value="0x">0x</option>
-                                <option value="12x">12x</option>
-                                <option value="24x">24x</option>
-                                <option value="36x">36x</option>
-                                <option value="48x">48x</option>
-                                <option value="60x">60x</option>
-                            </select>
-                        </h4>
-                    </div>
-                    <div class="action">&nbsp;&nbsp;&nbsp;
-                        <a href="fit3.php">
-                            <button class="btn btn-success" type="button">Enviar Proposta</button>
-                        </a> &nbsp;&nbsp;&nbsp;
-                        <button class="btn btn-warning" type="button">Apagar Campos<span class="fa fa-heart"></span></button>
+                    <br><br><br><br>
+                    <div>
+                        <center>
+                            <p class="product-description"><h5>Sua proposta foi efetivada com sucesso! <br> Vá até uma concessioária mais proxima e garanta o seu veículo. </h5> <p> <h6> *Proposta válida por 30 dias.</h6></p></p>
+                        </center>
                     </div>
                 </div>
             </div>

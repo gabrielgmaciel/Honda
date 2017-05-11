@@ -177,7 +177,7 @@
                 <div class="preview col-md-6">
 
                     <div class="preview-pic tab-content">
-                        <div class="tab-pane active" id="pic-1"><img src="imagens/civic/10.jpg" /></div>
+                        <div class="tab-pane active"><img src="imagens/civic/10.jpg" /></div>
                     </div>
                 </div>
                 <div class="details col-md-6">
@@ -208,7 +208,9 @@
                         </h4>
                     </div>
                     <div class="action">&nbsp;&nbsp;&nbsp;
-                        <button class="btn btn-success" type="button">Enviar Proposta</button>&nbsp;&nbsp;&nbsp;
+                        <a href="civic3.php">
+                            <button class="btn btn-success" type="button">Enviar Proposta</button>
+                        </a>&nbsp;&nbsp;&nbsp;
                         <button class="btn btn-warning" type="button">Apagar Campos<span class="fa fa-heart"></span></button>
                     </div>
                 </div>
