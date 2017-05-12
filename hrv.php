@@ -155,7 +155,11 @@
                 <div class="row">
                     <div class="col-sm-6 col-md-4">
                         <img src="imagens/hrv/01.jpg" alt="" class="img-rounded img-responsive" /> <br>
-                        <center><button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Comprar</button></center>
+                        <center>
+                            <a href="hrv2.php">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Comprar</button>
+                            </a>
+                        </center>
                     </div>
                     <div class="col-sm-6 col-md-8">
                         <h3>

@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
                     <form role="form">
-                        <h2>Cadastre-se ou faça seu <small><a href="login.php">Login</a></small></h2>
+                        <h2>Cadastre-se ou faça seu <a href="login.php">Login</a></h2>
                         <hr class="colorgraph">
 
                         <div class="form-group">
@@ -57,7 +57,7 @@
                         </div>
                     </form>
                 </div>
-            </div><br><br>
+            </div><br><br><br><br>
         </div>
     </body>
 </html>
