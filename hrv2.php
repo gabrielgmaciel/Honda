@@ -211,12 +211,13 @@
                         <a href="hrv3.php">
                             <button class="btn btn-success" type="button">Enviar Proposta</button>
                         </a>&nbsp;&nbsp;&nbsp;
-                        <button class="btn btn-warning" type="button">Apagar Campos<span class="fa fa-heart"></span></button>
+                        <button class="btn btn-warning" type="reset">Apagar Campos<span class="fa fa-heart"></span></button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<br><br><br><br>
 </body>
 </html>
