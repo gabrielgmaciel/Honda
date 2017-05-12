@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
               <center>
-               <br><br><br><br><br><br>
+               <br><br>
                   <table class="table table-bordered">
                       <table class="table table-hover">
                         <tr>
@@ -84,5 +84,6 @@
                 </center>
              </div>
         </div>
+<br><br><br><br><br><br>
 </body>
 </html>
