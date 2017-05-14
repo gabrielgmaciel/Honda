@@ -4,11 +4,11 @@
     $l1="admin@gmail.com";
     $pas="admin";
     //variáveis que recebem os dados de login.php
-    $logon=$_POST['login'];
-    $senha=$_POST['senha'];
+    $logon=isset($_POST['login']) ? $_POST['login'] : '';
+    $senha=isset($_POST['senha']) ? $_POST['senha'] : '';
     if ($logon == $l1 && $senha == $pas)
     {
-        header ("location: admin.php?logon=admin");
+        header ("location: admin.php");
     }else if (validaUsuario($logon, $senha) == true) {
         // O usuário e a senha digitados foram validados
         header("Location: index.php");

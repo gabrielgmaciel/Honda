@@ -11,10 +11,11 @@
     $_SG['validaSempre'] = true;
     //verifica se há uma sessão iniciada
     if ($_SG['abreSessao'] == true)
-    session_start();
+        session_start();
     //função para validação do usuário
     function validaUsuario($logon,$senha)
     {
+        global $_SG;
         include "conecta.php";
         $sql = "SELECT 'email','senha' FROM cliente WHERE email = '{$logon}' AND senha = '{$senha}'";
         $result = mysqli_query($conexao,$sql);
@@ -31,7 +32,8 @@
             return true;
         }
         //validaSempre
-        if ($_SG['validaSempre'] == true) {
+        if ($_SG['validaSempre'] == true)
+        {
             // Definimos dois valores na sessão com os dados do login
             $_SESSION['usuarioLogin'] = $logon;
             $_SESSION['usuarioSenha'] = $senha;
@@ -41,11 +43,11 @@
     function protegePagina()
     {
         global $_SG;
-        if (isset($_SESSION['logon']) OR isset($_SESSION['senha']))
+        if (!isset($_SESSION['logon']) && !isset($_SESSION['senha']))
         {
             expulsaVisitante();
         }
-        elseif (isset($_SESSION['logon']) OR isset($_SESSION['senha']))
+        else
         {
             if ($_SG['validaSempre'] == true)
             {
