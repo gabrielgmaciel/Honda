@@ -1,6 +1,9 @@
 <html>
 <header>
-    <?php include "header.php"; ?>
+    <?php   include "header.php";
+            include "s-login.php";
+            protegePagina();
+    ?>
     <style>
 
         /*****************globals*************/

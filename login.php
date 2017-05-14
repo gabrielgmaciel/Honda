@@ -1,7 +1,7 @@
 <html>
 	<?php include "header.php" ?>
 <body class="login-background" background="imagens/login.jpg" class="main" >
-    <form action="s-login.php" method="post">
+    <form action="recebeLogin.php" method="post">
         <div class="login-off"></div>
                 <br><br><br>
                             <div class="container min-height" style="margin-top: 20px;">
@@ -28,13 +28,20 @@
                                                   </div>
                                                   <?php
                                                   if(isset ($_GET["login"]) && $_GET["login"]==0)
-                                                  {
-
-                                                      ?>
+                                                  {?>
                                                       <p class="alert-danger" style="width:100%">
-                                                          Usuário/Senha inválida
+                                                          Usuário/Senha inválida ! !
                                                       </p>
                                                       <?php
+                                                  }
+                                                  ?>
+                                                  <?php
+                                                  if(isset ($_GET["login"]) && $_GET["login"]==1)
+                                                  {?>
+                                                  <p class="alert-danger" style="width:100%">
+                                                      Usuário não tem log ! !
+                                                  </p>
+                                                  <?php
                                                   }
                                                   ?>
 
