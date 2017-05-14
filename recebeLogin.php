@@ -13,9 +13,7 @@
         // O usuário e a senha digitados foram validados
         header("Location: index.php");
     } else {
-        // O usuário e/ou a senha são inválidos, manda de volta pro form de login
-        // Para alterar o endereço da página de login, verifique o arquivo s-login.php
-        //expulsaVisitante();
+        // O usuário e/ou a senha são inválidos, manda de volta pro form de login com o erro
         unset($_SESSION['logon']);
         unset($_SESSION['senha']);
         header ("location: login.php?login=0");
