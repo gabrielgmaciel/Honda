@@ -1,3 +1,3 @@
 <?php
-    $conexao= mysqli_connect('localhost', 'root', '', 'bdappweb')
+    $conexao= mysqli_connect('localhost', 'root', '', 'bdappweb');
 ?>
