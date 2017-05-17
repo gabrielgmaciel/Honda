@@ -12,6 +12,7 @@
     //verifica se há uma sessão iniciada
     if ($_SG['abreSessao'] == true)
         session_start();
+    //valida login 2.0
     //função para validação do usuário
     function validaUsuario($logon,$senha)
     {
@@ -54,7 +55,6 @@
                 if (validaUsuario($_SESSION['usuarioLogin'],$_SESSION['usuarioSenha']))
                 {
                     expulsaVisitante();
-                    //header("locale:city.php");
                 }
             }
         }
@@ -68,7 +68,8 @@
         unset($_SESSION['usuarioSenha']);
         header ("location: login.php?login=1");
     }
-	/*if($logon == $l1 && $senha == $pas)
+	//valida login 1.0
+    /*if($logon == $l1 && $senha == $pas)
 		{
 		    header ("location: admin.php?logon=admin");
         }

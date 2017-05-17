@@ -39,7 +39,7 @@
                                                   if(isset ($_GET["login"]) && $_GET["login"]==1)
                                                   {?>
                                                   <p class="alert-danger" style="width:100%">
-                                                      Usuário não tem log ! !
+                                                      Efetue o login para continuar! !
                                                   </p>
                                                   <?php
                                                   }

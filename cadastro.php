@@ -29,12 +29,12 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="tel_celular" id="telcelular" class="form-control input-lg" placeholder="Tel. Celular" tabindex="1">
+                                        <input  maxlength="12" name="tel_celular" id="telcelular" class="form-control input-lg" placeholder="Tel. Celular" tabindex="1">
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="tel_residencial" id="telcasa" class="form-control input-lg" placeholder="Tel. Residêncial" tabindex="1">
+                                        <input type="text" maxlength="12" name="tel_residencial" id="telcasa" class="form-control input-lg" placeholder="Tel. Residêncial" tabindex="1">
                                     </div>
                                 </div>
                             </div>

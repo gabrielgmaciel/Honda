@@ -1,5 +1,5 @@
 <html>
-    <?php include "header.php"; ?>
+    <?php include "header.php"; include "s-admin.php"?>
 <body>
         <div class="container">
             <div class="row">
@@ -12,7 +12,8 @@
                                 <th>Honda Fit</th>
                                 <th>Valor:</th>
                                 <th class="col-xs-3">
-                                        <input type="number" name="valorFit" class="form-control" placeholder="R$ = 00.000,00">
+                                    <input type="text" name="id" formmethod="post" formaction="s-admin.php">
+                                    <input type="number" name="valor" class="form-control" placeholder="R$ 0000.00" id="valorFit" value="15000.50">
                                 </th>
                                 <th>Juros:</th>
                                 <th class="col-xs-3">
@@ -20,7 +21,7 @@
                                 </th>
                             </div>
                         </tr>
-                        <tr>
+                        <tr><!--
                             <div class="col-xs-3">
                                 <th>Honda City</th>
                                 <th>Valor:</th>
@@ -71,16 +72,17 @@
                                     <input type="number" name="JurosAccord" class="form-control" placeholder="00,0 %">
                                 </th>
                             </div>
-                        </tr>
+                        </tr>-->
                     </table>
                      <br>
                       <div>
-                          <button type="button" class="btn btn-success">inserir</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <button type="button" class="btn btn-danger">Excluir</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <button type="button" class="btn btn-info">Pesquisar</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <button type="button" class="btn btn-warning">Alterar</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <!--<button type="button" class="btn btn-success">Inserir</button>-->
+                          <!--<button type="button" class="btn btn-danger">Excluir</button>--> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <!--<button type="button" class="btn btn-info">Pesquisar</button> -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <form action="s-admin.php" method="post"
+                                  <input type="submit" class="btn btn-warning">Alterar</form> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       </div>
-                  </table>
+                  <!--</table>-->
                 </center>
              </div>
         </div>
