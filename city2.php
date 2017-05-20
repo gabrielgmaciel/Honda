@@ -2,7 +2,7 @@
 <header>
     <?php   include "header.php";
             include "s-login.php";
-            //protegePagina();
+            protegePagina();
             ?>
     <style>
 
@@ -209,7 +209,7 @@
                         <h4 class="sizes">Entrada:   <input type="number" class="form-control" name="entrada" placeholder="R$ 000.000,00"></h4>
                         <h4 class="sizes">Parcelas:
                             <select class="form-control" name="parcelas">
-                                <option value="0">0x</option>
+                                <option value="1">0x</option>
                                 <option value="12">12x</option>
                                 <option value="24">24x</option>
                                 <option value="36">36x</option>
