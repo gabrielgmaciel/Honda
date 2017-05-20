@@ -1,9 +1,8 @@
 <html>
 	<?php include "header.php" ?>
 <body class="login-background" background="imagens/login.jpg" class="main" >
-    <form action="s-login.php" method="GET">
-        <div class="login-off">
-            </div>
+    <form action="recebeLogin.php" method="post">
+        <div class="login-off"></div>
                 <br><br><br>
                             <div class="container min-height" style="margin-top: 20px;">
                                     <div class="row">
@@ -13,7 +12,7 @@
                                               <form class="login-form">
                                                   <div class="form-group">
                                                       <div class="input-group">
-                                                          <input type="email" name="logon" class="form-control" placeholder="Digite seu E-mail">
+                                                          <input type="email" name="login" class="form-control" placeholder="Digite seu E-mail">
                                                           <span class="input-group-addon">
                                                               <i class="glyphicon glyphicon-user"></i>
                                                           </span>
@@ -27,6 +26,24 @@
                                                           </span>
                                                       </div>
                                                   </div>
+                                                  <?php
+                                                  if(isset ($_GET["login"]) && $_GET["login"]==0)
+                                                  {?>
+                                                      <p class="alert-danger" style="width:100%">
+                                                          Usuário/Senha inválida ! !
+                                                      </p>
+                                                      <?php
+                                                  }
+                                                  ?>
+                                                  <?php
+                                                  if(isset ($_GET["login"]) && $_GET["login"]==1)
+                                                  {?>
+                                                  <p class="alert-danger" style="width:100%">
+                                                      Efetue o login para continuar! !
+                                                  </p>
+                                                  <?php
+                                                  }
+                                                  ?>
 
                                                   <div class="form-group sign-btn">
                                                       <input type="submit" class="btn btn-default" value="Entrar">
@@ -39,5 +56,5 @@
                             </div>
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.0.18/jquery.flip.js"></script>
     </form>
-					</body>
-</html>	
+</body>
+</html>
