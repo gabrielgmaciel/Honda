@@ -2,7 +2,7 @@
 <header>
     <?php   include "header.php";
             include "s-login.php";
-            protegePagina();
+            //protegePagina();
             ?>
     <style>
 
@@ -196,24 +196,31 @@
                     </div>
 
                     <p class="product-description">A Honda Automóveis do Brasil oferece, por um prazo de 2 anos a partir da Nota Fiscal de Vendas do veículo zero, o serviço de Assistência 24 horas, do qual poderá dispor, em caso de acidente, furto, roubo ou pane (de origem elétrica ou mecânica), com cobertura em qualquer parte do Brasil, Argentina, Uruguai ou Paraguai.</p>
-                    <h4 class="price">Preço do Veículo: <span>R$ 81.400,00</span></h4>
+                    <form action="city3.php" method="post">
+                    <h4 class="price">Preço do Veículo: <span>
+                            <?php
+                            $sql = "select valor from carros where id='City'";
+                            $result=mysqli_query($conexao,$sql);
+                            while ($array = mysqli_fetch_assoc($result)){
+                                echo "R$ ".$array['valor'];
+                            } ?></span></h4>
                     <div class="form-group form-inline">
-                        <h4 class="sizes">Entrada:   <input type="number" class="form-control" id="entradaCity" placeholder="R$ 000.000,00"></h4>
+                        <input type="hidden" name="id" value="City">
+                        <h4 class="sizes">Entrada:   <input type="number" class="form-control" name="entrada" placeholder="R$ 000.000,00"></h4>
                         <h4 class="sizes">Parcelas:
-                            <select class="form-control" id="parcelaCity">
-                                <option value="0x">0x</option>
-                                <option value="12x">12x</option>
-                                <option value="24x">24x</option>
-                                <option value="36x">36x</option>
-                                <option value="48x">48x</option>
-                                <option value="60x">60x</option>
+                            <select class="form-control" name="parcelas">
+                                <option value="0">0x</option>
+                                <option value="12">12x</option>
+                                <option value="24">24x</option>
+                                <option value="36">36x</option>
+                                <option value="48">48x</option>
+                                <option value="60">60x</option>
                             </select>
                         </h4>
                     </div>
-                    <div class="action">&nbsp;&nbsp;&nbsp;
-                        <a href="city3.php">
-                            <button class="btn btn-success" type="button">Enviar Proposta</button>
-                        </a>&nbsp;&nbsp;&nbsp;
+                    <div class="action">
+                            <button class="btn btn-success" type="submit">Enviar Proposta</button>
+                        </form>
                         <button class="btn btn-warning" type="button">Apagar Campos<span class="fa fa-heart"></span></button>
                     </div>
                 </div>

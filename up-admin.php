@@ -65,12 +65,13 @@ function teste($conexao,$id)
         $sql = "select juros from carros WHERE id='{$id}'";
         $valor = mysqli_query($conexao,$sql);
         return $valor;
-    }
-
+    }else
+    {
         $sql = "update carros set juros='{$juros}' WHERE id='{$id}'";
         //$sql="insert into carros (id,valor,juros) values ('{$id}','{$valor}','{$juros}')";
         $result = mysqli_query($conexao, $sql);
         return $result;
+    }
 }
     /*if (alteraValorCarros($conexao,$id))
     {
@@ -90,7 +91,7 @@ function teste($conexao,$id)
         echo $error;
         //header("location: admin.php");
     }*/
-    if (teste($conexao,$id))
+    if (alteraJurosCarros($conexao,$id))
     {
         echo $valor;
         echo "  <br/>    ";

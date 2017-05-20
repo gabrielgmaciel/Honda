@@ -221,9 +221,8 @@
                             </select>
                         </h4>
                     </div>
-                    <div class="action">&nbsp;&nbsp;&nbsp;
-
-                            <button class="btn btn-success" type="submit">Enviar Proposta</button>
+                    <div class="action">
+                        <button class="btn btn-success" type="submit">Enviar Proposta</button>
                         </form>
                             <input class="btn btn-warning" type="reset" value="Apagar Campos"><span class="fa fa-heart"></span></input>
                     </div>

@@ -2,7 +2,7 @@
 <header>
     <?php   include "header.php";
             include "s-login.php";
-            protegePagina();
+            //protegePagina();
     ?>
     <style>
 
@@ -196,11 +196,19 @@
                     </div>
 
                     <p class="product-description">A Honda Automóveis do Brasil oferece, por um prazo de 2 anos a partir da Nota Fiscal de Vendas do veículo zero, o serviço de Assistência 24 horas, do qual poderá dispor, em caso de acidente, furto, roubo ou pane (de origem elétrica ou mecânica), com cobertura em qualquer parte do Brasil, Argentina, Uruguai ou Paraguai.</p>
-                    <h4 class="price">Preço do Veículo: <span>R$ 105.900,00</span></h4>
+                    <form action="hrv3.php" method="post">
+                    <h4 class="price">Preço do Veículo: <span>
+                            <?php
+                            $sql = "select valor from carros where id='Fit'";
+                            $result=mysqli_query($conexao,$sql);
+                            while ($array = mysqli_fetch_assoc($result)){
+                                echo "R$ ".$array['valor'];
+                            } ?></span></h4>
                     <div class="form-group form-inline">
-                        <h4 class="sizes">Entrada:   <input type="number" class="form-control" id="entradaHRV" placeholder="R$ 000.000,00"></h4>
+                        <input type="hidden" name="id" value="HR-V">
+                        <h4 class="sizes">Entrada:   <input type="number" class="form-control" name="entrada" placeholder="R$ 000.000,00"></h4>
                         <h4 class="sizes">Parcelas:
-                            <select class="form-control" id="parcelaHRV">
+                            <select class="form-control" name="parcelas">
                                 <option value="0x">0x</option>
                                 <option value="12x">12x</option>
                                 <option value="24x">24x</option>
@@ -212,8 +220,8 @@
                     </div>
                     <div class="action">&nbsp;&nbsp;&nbsp;
                         <a href="hrv3.php">
-                            <button class="btn btn-success" type="button">Enviar Proposta</button>
-                        </a>&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-success" type="submit">Enviar Proposta</button>
+                        </form>
                         <button class="btn btn-warning" type="reset">Apagar Campos<span class="fa fa-heart"></span></button>
                     </div>
                 </div>
