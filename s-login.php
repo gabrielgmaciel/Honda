@@ -44,7 +44,7 @@
     function protegePagina()
     {
         global $_SG;
-        if (!isset($_SESSION['logon']) && !isset($_SESSION['senha']))
+        if (!isset($_SESSION['logon']) or !isset($_SESSION['senha']))
         {
             expulsaVisitante();
         }
