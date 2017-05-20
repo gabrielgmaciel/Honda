@@ -7,7 +7,7 @@
     <style>
 
         /*****************globals*************/
-        body {
+        .body {
             font-family: 'open sans';
             overflow-x: hidden; }
 
@@ -209,19 +209,32 @@
                         <h4 class="sizes">Entrada:   <input type="number" class="form-control" name="entrada" placeholder="R$ 000.000,00"></h4>
                         <h4 class="sizes">Parcelas:
                             <select class="form-control" name="parcelas">
+<<<<<<< HEAD
                                 <option value="1">0x</option>
                                 <option value="12">12x</option>
                                 <option value="24">24x</option>
                                 <option value="36">36x</option>
                                 <option value="48">48x</option>
                                 <option value="60">60x</option>
+=======
+                                <option value="0x">0x</option>
+                                <option value="12x">12x</option>
+                                <option value="24x">24x</option>
+                                <option value="36x">36x</option>
+                                <option value="48x">48x</option>
+                                <option value="60x">60x</option>
+>>>>>>> gabriel
                             </select>
                         </h4>
                     </div>
                     <div class="action">
                             <button class="btn btn-success" type="submit">Enviar Proposta</button>
                         </form>
+<<<<<<< HEAD
                         <button class="btn btn-warning" type="button">Apagar Campos<span class="fa fa-heart"></span></button>
+=======
+                        <input type="reset" class="btn btn-warning" value="Apagar Campos">
+>>>>>>> gabriel
                     </div>
                 </div>
             </div>

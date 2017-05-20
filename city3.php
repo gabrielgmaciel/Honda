@@ -66,7 +66,7 @@
     <style>
 
         /*****************globals*************/
-        body {
+        .body {
             font-family: 'open sans';
             overflow-x: hidden; }
 

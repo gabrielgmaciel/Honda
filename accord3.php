@@ -66,7 +66,7 @@
     <style>
 
         /*****************globals*************/
-        body {
+        .body {
             font-family: 'open sans';
             overflow-x: hidden; }
 
@@ -258,7 +258,11 @@
                                         echo $entrada;
                                     }
                                     ?></span></h4>
+<<<<<<< HEAD
                             <h4 class="price">Valor das parcelas: <span><?php echo $qtdparcelas." de "?> </span><span><?php echo  $parcelaComJuros ?></span></h4>
+=======
+                            <h4 class="price">Valor das parcelas: <span><?php echo $qtdparcelas." <span> de </span>"?> </span><span><?php echo  $parcelaComJuros ?></span></h4>
+>>>>>>> gabriel
                        </center>
                    </div>
                     <br><br><br><br>
