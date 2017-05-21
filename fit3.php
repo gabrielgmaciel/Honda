@@ -256,10 +256,18 @@
                                         echo "Sem entrada";
                                     }else
                                     {
-                                        echo $entrada;
+                                        setlocale(LC_MONETARY, 'pt_BR');
+                                        echo "R$ " . money_format('%i', $entrada);
+
                                     }
                                     ?></span></h4>
-                            <h4 class="price">Valor das parcelas: <span><?php echo $qtdparcelas." de "?></span><span><?php echo  $parcelaComJuros ?></span></h4>
+                            <h4 class="price">Valor das parcelas: <span><?php echo $qtdparcelas." <span> de </span>"?> </span><span>
+                                    <?php
+                                    setlocale(LC_MONETARY, 'pt_BR');
+                                    echo "R$ " . money_format('%i', $parcelaComJuros);
+
+                                    ?>
+                                </span></h4>
                         </center>
                     </div>
                     <br><br><br><br>
