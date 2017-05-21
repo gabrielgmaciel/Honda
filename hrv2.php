@@ -199,7 +199,7 @@
                     <form action="hrv3.php" method="post">
                     <h4 class="price">Preço do Veículo: <span>
                             <?php
-                            $sql = "select valor from carros where id='Fit'";
+                            $sql = "select valor from carros where id='HR-V'";
                             $result=mysqli_query($conexao,$sql);
                             while ($array = mysqli_fetch_assoc($result)){
                                 echo "R$ ".$array['valor'];

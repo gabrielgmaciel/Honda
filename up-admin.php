@@ -41,68 +41,15 @@
             return $result;
         }
     }
-function teste($conexao,$id)
-{
-    //global $valor;
-    //$valor=$_POST['valor'];
-    global $juros;
-    $juros = $_POST['juros'];
-
-    /*if ($valor == null)
-    {
-        $sql = "select valor from carros WHERE id='{$id}'";
-        $resultado = mysqli_query($conexao,$sql);
-        if ($resultado)
+        if (alteraJurosCarros($conexao,$id))
         {
-            $a = mysqli_fetch_assoc($resultado);
-            return $a['valor'];
-            $valor = $a['valor'];
+                header("location: admin.php?admin=0");
+        }else
+        {
+            $error = mysqli_error($conexao);
+            echo $error;
+            //header("location: admin.php");
         }
-
-    }*/
-    if ($juros == null)
-    {
-        $sql = "select juros from carros WHERE id='{$id}'";
-        $valor = mysqli_query($conexao,$sql);
-        return $valor;
-    }else
-    {
-        $sql = "update carros set juros='{$juros}' WHERE id='{$id}'";
-        //$sql="insert into carros (id,valor,juros) values ('{$id}','{$valor}','{$juros}')";
-        $result = mysqli_query($conexao, $sql);
-        return $result;
-    }
-}
-    /*if (alteraValorCarros($conexao,$id))
-    {
-       header("location: admin.php");
-    }else
-    {
-        $error = mysqli_error($conexao);
-        echo $error;
-        //header("location: admin.php");
-    }
-    if (alteraJurosCarros($conexao,$id))
-    {
-        header("location: admin.php");
-    }else
-    {
-        $error = mysqli_error($conexao);
-        echo $error;
-        //header("location: admin.php");
-    }*/
-    if (alteraJurosCarros($conexao,$id))
-    {
-        echo $valor;
-        echo "  <br/>    ";
-        echo $juros;
-        header("location: admin.php");
-    }else
-    {
-        $error = mysqli_error($conexao);
-        echo $error;
-        //header("location: admin.php");
-    }
 
 
 ?>

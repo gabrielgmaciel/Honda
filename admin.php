@@ -4,8 +4,16 @@
             //include "update-admin.php";
     ?>
 <body> <br>
-<a href="userControl.php">
-    <button type="button" class="btn btn-success">Preço dos Veículos</button>
+    <div><center><?php
+            if(isset ($_GET["admin"]) && $_GET["admin"]==0)
+            {?>
+                <p class="alert-success" style="width:100%">
+                    Juros alterados com sucesso ! !
+                </p>
+            <?php } ?>
+        </center></div>
+<a href="users.php">
+    <button type="button" class="btn btn-success">Usuários</button>
 </a>
 <br><br>
     <?php

@@ -1,31 +1,13 @@
-<html>
-<header>
+
     <?php include "header.php"; ?>
     <?php require_once("conecta.php") ?>
-</header>
-<body>
-<form action =alterarForm.php  method=GET>
-    <br>
-    <a href="admin.php">
-        <button type="button" class="btn btn-success">Preço dos Veículos</button>
-    </a>
-    <br><br>
-    <center>
-        <table class="table table-hover" width="80%">
-            <tr>
-                <center>
-                    <td>Select</td>
-                    <td>Nome</td>
-                    <td>Endereço</td>
-                    <td>CEP</td>
-                    <td>Celular</td>
-                    <td>Residencial</td>
-                    <td>E-mail</td>
-                </center>
-            </tr>
+
             <?php
 
-            function listaProdutos($conexao){
+            $id = $_POST["id"];
+
+            function listaProdutos($conexao)
+            {
 
                 $sql="select * from cliente";
                 $resultado= mysqli_query($conexao,$sql );
@@ -35,26 +17,32 @@
                     <tr>
 
                         <td><center> <label class="checkbox-inline"> <input type="checkbox" name="lingua" id="lingua"> </label> </center></td>
-                        <td> <input type=text value= <?php echo $array['nome'];?> > </td>
-                        <td> <input type=text value= <?php echo $array['endereco'];?> > </td>
-                        <td> <input type=text value= <?php echo $array['cep'];?>  > </td>
-                        <td> <input type=text value= <?php echo $array['tel_celular'];?>  > </td>
-                        <td> <input type=text value= <?php echo $array['tel_residencial'];?>  > </td>
-                        <td> <input type=text value= <?php echo $array['email'];?>  > </td>
+                        <td> <?php echo $array['nome'];?></td>
+                        <td> <?php echo $array['endereco'];?></td>
+                        <td> <?php echo $array['cep'];?></td>
+                        <td> <?php echo $array['tel_celular'];?></td>
+                        <td> <?php echo $array['tel_residencial'];?></td>
+                        <td> <?php echo $array['email'];?></td>
                     </tr>
-                <?php }
+                <?php
+                global $id;
+                $id = $array['id'];}
             }
 
-            listaProdutos($conexao);
+            //listaProdutos($conexao);
+            function excluiClienteOTARO($conexao)
+            {
+                global $id;
+                $id = $_POST["id"];
+                $sql = "delete from cliente where id_cliente='{$id}'";
+                $result = mysqli_query($conexao,$sql);
+                return $result;
+            }
+            if (excluiClienteOTARO($conexao))
+            {
+                header("location: users.php?user=0");
+            }
+
+            echo "<br/>";
+            echo "id do cliente-->".$id;
             ?>
-        </table>
-        <a href="">
-            <button type="button" class="btn btn-danger">Excluir</button>
-        </a>
-    </center>
-
-</form>
-
-
-</body>
-</html>
