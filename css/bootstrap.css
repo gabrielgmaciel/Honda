@@ -6938,27 +6938,3 @@ Image credits: unsplash.com
 
 /* --------------------------------------------------------------------------------------------------- */
 
-/* Table Base */
-
-table {
-  max-width: 100%;
-  background-color: transparent;
-  border-collapse: collapse;
-  border-spacing: 0;
-
-}
-
-
-/* Small Sizes */
-@media (max-width: 767px) {
-
-  /* Responsive Table */
-  .table-responsive {
-    display: block;
-    position: relative;
-    width: 100%;
-  }
-
-
-
-}
