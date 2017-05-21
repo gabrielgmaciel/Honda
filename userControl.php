@@ -14,7 +14,7 @@
         <table class="table table-hover" width="80%">
             <tr>
                 <center>
-                    <td>ID</td>
+                    <td>Select</td>
                     <td>Nome</td>
                     <td>Endereço</td>
                     <td>CEP</td>
@@ -34,7 +34,7 @@
                 while($array=mysqli_fetch_assoc($resultado)) { ?>
                     <tr>
 
-                        <td> <label class="checkbox-inline"> <input type="checkbox" name="lingua" id="lingua"> <input type=text value= <?php echo $array['id_cliente'];?>>  </label> </td>
+                        <td><center> <label class="checkbox-inline"> <input type="checkbox" name="lingua" id="lingua"> </label> </center></td>
                         <td> <input type=text value= <?php echo $array['nome'];?> > </td>
                         <td> <input type=text value= <?php echo $array['endereco'];?> > </td>
                         <td> <input type=text value= <?php echo $array['cep'];?>  > </td>

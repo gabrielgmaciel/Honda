@@ -3,7 +3,11 @@
             include "conecta.php";
             //include "update-admin.php";
     ?>
-<body>
+<body> <br>
+<a href="userControl.php">
+    <button type="button" class="btn btn-success">Preço dos Veículos</button>
+</a>
+<br><br>
     <?php
         function listarForm($conexao)
         {
