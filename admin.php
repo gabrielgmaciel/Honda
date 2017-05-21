@@ -29,7 +29,6 @@
                 <div class="container">
                     <div class="row">
                         <center>
-                            <br><br>
                                 <table class="table table-hover">
                                     <?php if ($array['id'] == "Fit"){?>
                                     <tr>
@@ -47,6 +46,7 @@
                                                 <input type="decimalFilder" name="juros" class="form-control"
                                                        placeholder="<?php echo $array['juros']." %"; ?>">
                                             </th>
+                                            <th><button type="submit" class="btn btn-warning">Alterar</button></th>
                                         </div>
                                     </tr><?php }?>
                                     <?php if ($array['id'] == "City") { ?>
@@ -65,6 +65,7 @@
                                                 <input type="number" name="juros" class="form-control"
                                                        placeholder="<?php echo $array['juros']." %"; ?>">
                                             </th>
+                                            <th><button type="submit" class="btn btn-warning">Alterar</button></th>
                                         </div>
                                     </tr> <?php } ?>
                                     <?php if ($array['id'] == "Civic") {?>
@@ -83,6 +84,7 @@
                                                 <input type="number" name="juros" class="form-control"
                                                        placeholder="<?php echo $array['juros']." %"; ?>">
                                             </th>
+                                            <th><button type="submit" class="btn btn-warning">Alterar</button></th>
                                         </div>
                                     </tr> <?php }?>
                                     <?php if ($array['id'] == "HR-V") {?>
@@ -101,6 +103,7 @@
                                                 <input type="number" name="juros" class="form-control"
                                                        placeholder="<?php echo $array['juros']." %"; ?>">
                                             </th>
+                                            <th><button type="submit" class="btn btn-warning">Alterar</button></th>
                                         </div>
                                     </tr><?php } ?>
                                     <?php if ($array['id'] == "Accord") {?>
@@ -119,14 +122,10 @@
                                                 <input type="number" name="juros" class="form-control"
                                                        placeholder="<?php echo $array['juros']." %"; ?>">
                                             </th>
+                                            <th><button type="submit" class="btn btn-warning">Alterar</button></th>
                                         </div>
                                     </tr> <?php } ?>
                                 </table>
-
-                                <div>
-                                    <?php if ($array['id'] == "HR-V") {?>
-                                    <button type="submit" class="btn btn-warning">Alterar</button><?php } ?>
-                                </div>
                         </center>
                     </div>
                 </div>
