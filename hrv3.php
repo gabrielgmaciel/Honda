@@ -2,7 +2,7 @@
 <header>
     <?php   include "header.php";
             include "s-login.php";
-            //protegePagina();
+            protegePagina();
     include "conecta.php";
 
     //recuparando o valor e juros do BD

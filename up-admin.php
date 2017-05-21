@@ -1,5 +1,6 @@
-<?php include "conecta.php";
-
+<?php   include "conecta.php";
+        include "s-login.php";
+        protegePagina();
     //criando vaviáveis que receberam dados de admin.php
 
     $id=$_POST['id'];

@@ -1,7 +1,9 @@
 <html>
 <header>
-    <?php include "header.php"; ?>
-    <?php require_once("conecta.php") ?>
+    <?php   include "header.php";
+            require_once("conecta.php");
+            include "s-login.php";
+            protegePagina();?>
 </header>
 <body>
 <form action="userControl.php"  method=post>

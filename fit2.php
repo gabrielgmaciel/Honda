@@ -3,7 +3,7 @@
     <?php   include "header.php";
             include "s-login.php";
             include "conecta.php";
-            //protegePagina();
+            protegePagina();
     ?>
     <style>
 

@@ -2,7 +2,7 @@
 <header>
     <?php   require_once "header.php";
             require_once "s-login.php";
-             //protegePagina();
+             protegePagina();
 
     include "conecta.php";
 

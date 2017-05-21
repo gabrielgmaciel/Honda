@@ -1,4 +1,6 @@
-<?php include "conecta.php";
+<?php   include "conecta.php";
+        include "s-login.php";
+        protegePagina();
     //criando variaveis para receber dados de cadastro.php
     $nome=$_POST["nome"];
     $endereco=$_POST["endereco"];

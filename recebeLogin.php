@@ -1,5 +1,6 @@
 <?php
-include "s-login.php";
+    include "s-login.php";
+
 
 $l1="admin@gmail.com";
 $pas="admin";

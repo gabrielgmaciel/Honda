@@ -1,7 +1,8 @@
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <?php   include "header.php";
             include "conecta.php";
-            //include "update-admin.php";
+            include "s-login.php";
+            protegePagina();
     ?>
 <body> <br>
     <div><center><?php

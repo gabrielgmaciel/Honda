@@ -1,12 +1,8 @@
 <?php include "conecta.php";
 
+
 	ini_set ('default_charset','UTF-8');
-	
-	//$l1="admin@gmail.com";
-	//$pas="admin";
-    //variáveis que recebem os dados de login.php
-	//$logon=$_POST["login"];
-	//$senha=$_POST["senha"];
+
     $_SG['abreSessao'] = true;
     $_SG['validaSempre'] = true;
     //verifica se há uma sessão iniciada

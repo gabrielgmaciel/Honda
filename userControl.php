@@ -1,8 +1,8 @@
+<?php   include "header.php";
+        require_once("conecta.php");
+        include "s-login.php";
+        protegePagina();
 
-    <?php include "header.php"; ?>
-    <?php require_once("conecta.php") ?>
-
-            <?php
 
             $id = $_POST["id"];
 
@@ -45,4 +45,4 @@
 
             echo "<br/>";
             echo "id do cliente-->".$id;
-            ?>
+?>
