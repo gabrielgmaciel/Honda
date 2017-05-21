@@ -221,11 +221,8 @@
                         <div class="action">
                                 <button class="btn btn-success" type="submit">Enviar Proposta</button>
                             </form>
-<<<<<<< HEAD
-                            <button class="btn btn-warning" type="button">Apagar Campos<span class="fa fa-heart"></span></button>
-=======
                             <input type="reset" class="btn btn-warning" value="Apagar Campos">
->>>>>>> gabriel
+
                         </div>
                     </div>
                 </div>

@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-<?php
-/**
- * Created by PhpStorm.
- * User: Wan
- * Date: 20/05/2017
- * Time: 13:47
- */
-=======
 <html>
 <header>
     <?php include "header.php"; ?>
@@ -67,4 +58,3 @@
 
 </body>
 </html>
->>>>>>> gabriel

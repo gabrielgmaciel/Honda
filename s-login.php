@@ -29,11 +29,7 @@
         {
             $_SESSION['logon'] = $logon;
             $_SESSION['senha'] = $senha;
-<<<<<<< HEAD
             header("location: index.php");
-=======
-            header("location: index.php?login=0");
->>>>>>> gabriel
             return true;
         }
         //validaSempre
@@ -72,11 +68,7 @@
         unset($_SESSION['usuarioSenha']);
         header ("location: login.php?login=1");
     }
-<<<<<<< HEAD
     //valida login 1.0
-=======
-	//valida login 1.0
->>>>>>> gabriel
     /*if($logon == $l1 && $senha == $pas)
 		{
 		    header ("location: admin.php?logon=admin");
@@ -111,7 +103,4 @@
                 unset($_SESSION['senha']);
                 header ("location: login.php?login=0");
             }*/
-
-
-
 ?>

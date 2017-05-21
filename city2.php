@@ -2,11 +2,7 @@
 <header>
     <?php   include "header.php";
             include "s-login.php";
-<<<<<<< HEAD
             protegePagina();
-=======
-            //protegePagina();
->>>>>>> gabriel
             ?>
     <style>
 
@@ -213,11 +209,7 @@
                         <h4 class="sizes">Entrada:   <input type="number" class="form-control" name="entrada" placeholder="R$ 000.000,00"></h4>
                         <h4 class="sizes">Parcelas:
                             <select class="form-control" name="parcelas">
-<<<<<<< HEAD
                                 <option value="1">0x</option>
-=======
-                                <option value="0">0x</option>
->>>>>>> gabriel
                                 <option value="12">12x</option>
                                 <option value="24">24x</option>
                                 <option value="36">36x</option>
@@ -229,11 +221,7 @@
                     <div class="action">
                             <button class="btn btn-success" type="submit">Enviar Proposta</button>
                         </form>
-<<<<<<< HEAD
-                        <button class="btn btn-warning" type="button">Apagar Campos<span class="fa fa-heart"></span></button>
-=======
                         <input type="reset" class="btn btn-warning" value="Apagar Campos">
->>>>>>> gabriel
                     </div>
                 </div>
             </div>

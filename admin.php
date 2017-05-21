@@ -16,11 +16,7 @@
                 <div class="container">
                     <div class="row">
                         <center>
-<<<<<<< HEAD
                             <br><br>
-=======
->>>>>>> gabriel
-
                                 <table class="table table-hover">
                                     <?php if ($array['id'] == "Fit"){?>
                                     <tr>
@@ -50,10 +46,6 @@
                                                 <center><?php
                                                     echo "R$ ".$array['valor']; ?>
                                                 </center>
-<<<<<<< HEAD
-                                                <!--<input type="number" name="valorCity" class="form-control" placeholder="R$ = 00.000,00">-->
-=======
->>>>>>> gabriel
                                             </th>
                                             <th>Juros:</th>
                                             <th class="col-xs-3">
@@ -72,10 +64,6 @@
                                                 <center><?php
                                                     echo "R$ ".$array['valor']; ?>
                                                 </center>
-<<<<<<< HEAD
-                                                <!--<input type="number" name="valorCivic" class="form-control" placeholder="R$ = 00.000,00">-->
-=======
->>>>>>> gabriel
                                             </th>
                                             <th>Juros:</th>
                                             <th class="col-xs-3">
@@ -94,10 +82,6 @@
                                                 <center><?php
                                                     echo "R$ ".$array['valor']; ?>
                                                 </center>
-<<<<<<< HEAD
-                                                <!--<input type="number" name="valorHRV" class="form-control" placeholder="R$ = 00.000,00">-->
-=======
->>>>>>> gabriel
                                             </th>
                                             <th>Juros:</th>
                                             <th class="col-xs-3">
@@ -116,10 +100,6 @@
                                                 <center><?php
                                                     echo "R$ ".$array['valor']; ?>
                                                 </center>
-<<<<<<< HEAD
-                                                <!--<input type="number" name="valorAccord" class="form-control" placeholder="R$ = 00.000,00">-->
-=======
->>>>>>> gabriel
                                             </th>
                                             <th>Juros:</th>
                                             <th class="col-xs-3">
@@ -131,12 +111,6 @@
                                 </table>
 
                                 <div>
-<<<<<<< HEAD
-                                    <!--button type="button" class="btn btn-success">Inserir</button>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                    <button type="button" class="btn btn-info">Pesquisar</button>-->
-=======
->>>>>>> gabriel
                                     <?php if ($array['id'] == "HR-V") {?>
                                     <button type="submit" class="btn btn-warning">Alterar</button><?php } ?>
                                 </div>
@@ -147,10 +121,5 @@
         }
         listarForm($conexao);
             ?>
-<<<<<<< HEAD
-        <br><br><br><br><br><br>
-=======
-        <br><br><br>
->>>>>>> gabriel
 </body>
 </html>
