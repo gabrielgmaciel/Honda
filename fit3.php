@@ -1,10 +1,73 @@
 <html>
 <header>
-    <?php include "header.php"; ?>
+    <?php   require_once "header.php";
+            require_once "s-login.php";
+             protegePagina();
+
+    include "conecta.php";
+
+    //recuparando o valor e juros do BD
+    $id = $_POST["id"];
+    $sql = "select valor from carros where id='{$id}'";
+    $result = mysqli_query($conexao, $sql);
+    while ($array = mysqli_fetch_assoc($result)) {
+        //echo "R$ ".$array['valor'];
+        global $v;
+        $v = $array['valor'];
+
+    }
+    $sql = "select juros from carros where id='{$id}'";
+    $result = mysqli_query($conexao, $sql);
+    while ($array = mysqli_fetch_assoc($result)) {
+        //echo "R$ ".$array['juros'];
+        global $j;
+        $j = $array['juros'];
+    }
+    function calculaJuros()
+    {
+        //atribuindo os valores buscados no BD para variáveis que serão utilizadas no calculoJuros()
+        global $v;
+        global $j;
+        //criando variáreis nescessárias para o calculo
+        global $entrada;
+        $entrada = $_POST["entrada"];
+        global $qtdparcelas;
+        $qtdparcelas = $_POST["parcelas"];
+        $valor = $v;
+        //calculo dos juros
+        $valorComEntrada = $valor - $entrada;
+        $juros = $j / 100;
+        $jurosPorParcela = $valorComEntrada * $juros;
+        $parcela = $valorComEntrada / $qtdparcelas;
+        global $parcelaComJuros;
+        $parcelaComJuros = $parcela + $jurosPorParcela;
+        $valorfinal = $parcelaComJuros * $qtdparcelas;
+        /*echo "<br/>" . $valor . "<-valor do bd";
+        echo "<br/>" . $juros . "<--juros do bd";
+        echo "<br/>" . $jurosPorParcela . "<--valor dos juros por parcela";
+        echo "<br/>" . $parcela . "<--valor das parcelas (valor final / quantidades de parcelas";
+        echo "<br/>" . $valorComEntrada . "<--valor menos a entrada";
+        echo "<br/>" . $entrada . "<--entrada";
+        echo "<br/>" . $qtdparcelas . "<--quantidade de parcelas<br/>";
+        echo "<br/>" . $parcelaComJuros . "<--valor das parcelas com juros<br/>";
+        echo "<br/><br/>";
+        echo "Valor:" . $valor . "<br/>";
+        echo "Valor parcela:" . $parcela . "<br>";
+        echo "Valor final:" . $valorfinal . "<br>";*/
+
+        return $parcelaComJuros;
+        return $entrada;
+
+
+
+
+    }
+    calculaJuros();
+    ?>
     <style>
 
         /*****************globals*************/
-        body {
+        .body {
             font-family: 'open sans';
             overflow-x: hidden; }
 
@@ -187,8 +250,23 @@
                     <br><br><br>
                     <div>
                         <center>
-                            <h4 class="price">Valor da entrada: <span>R$ 000.000,00</span></h4>
-                            <h4 class="price">Valor das parcelas: <span>24x </span><span>R$ 000.000,00</span></h4>
+                            <h4 class="price">Valor da entrada: <span><?php
+                                    if ($entrada == null)
+                                    {
+                                        echo "Sem entrada";
+                                    }else
+                                    {
+                                        setlocale(LC_MONETARY, 'pt_BR');
+                                        echo "R$ " . money_format('%i', $entrada);
+                                    }
+                                    ?></span></h4>
+                            <h4 class="price">Valor das parcelas: <span><?php echo $qtdparcelas." de "?> </span><span><?php
+
+                                    setlocale(LC_MONETARY, 'pt_BR');
+                                    echo "R$ " . money_format('%i', $parcelaComJuros);
+
+                                    ?>
+                                </span></h4>
                         </center>
                     </div>
                     <br><br><br><br>
