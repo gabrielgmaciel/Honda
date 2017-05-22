@@ -2,8 +2,8 @@
 <header>
     <?php   include "header.php";
             require_once("conecta.php");
-            include "s-login.php";
-            protegePagina();?>
+            //include "s-login.php";
+            //protegePagina();?>
 </header>
 <body>
 <form action="userControl.php"  method=post>
