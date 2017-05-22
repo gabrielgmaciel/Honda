@@ -201,12 +201,18 @@
                             <?php
                             $sql = "select valor from carros where id='HR-V'";
                             $result=mysqli_query($conexao,$sql);
-                            while ($array = mysqli_fetch_assoc($result)){
-                                echo "R$ ".$array['valor'];
-                            } ?></span></h4>
+                            if ($result == false)
+                            {
+                                echo "deu merda ! ! !";
+                            }else {
+                                while ($array = mysqli_fetch_assoc($result)){
+                                    setlocale(LC_MONETARY, 'pt_BR');
+                                    echo "R$ ".number_format($array['valor'], 2);
+                                }
+                            }?></span></h4>
                     <div class="form-group form-inline">
                         <input type="hidden" name="id" value="HR-V">
-                        <h4 class="sizes">Entrada:   <input type="number" class="form-control" name="entrada" placeholder="R$ 000.000,00"></h4>
+                        <h4 class="sizes">Entrada:   <input type="decimalFilder" class="form-control" name="entrada" placeholder="R$ 000.000,00"></h4>
                         <h4 class="sizes">Parcelas:
                             <select class="form-control" name="parcelas">
                                 <option value="1">0x</option>

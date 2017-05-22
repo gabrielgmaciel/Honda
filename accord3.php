@@ -255,9 +255,9 @@
                                         echo "Sem entrada";
                                     }else
                                     {
-                                        echo $entrada;
-                                    }
-                                    ?></span></h4>
+                                            setlocale(LC_MONETARY, 'pt_BR');
+                                            echo "R$ " . number_format($entrada, 2);
+                                    }?></span></h4>
                             <h4 class="price">Valor das parcelas: <span><?php echo $qtdparcelas." de "?> </span><span><?php echo  $parcelaComJuros ?></span></h4>
                        </center>
                    </div>
