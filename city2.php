@@ -202,7 +202,10 @@
                             $sql = "select valor from carros where id='City'";
                             $result=mysqli_query($conexao,$sql);
                             while ($array = mysqli_fetch_assoc($result)){
-                                echo "R$ ".$array['valor'];
+
+                                setlocale(LC_MONETARY, 'pt_BR');
+                                echo "R$ " . money_format('%i', $array['valor']);
+
                             } ?></span></h4>
                     <div class="form-group form-inline">
                         <input type="hidden" name="id" value="City">

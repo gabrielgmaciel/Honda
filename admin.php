@@ -38,7 +38,9 @@
                                             <th>Valor:</th>
                                             <th class="col-xs-3">
                                                 <center><?php
-                                                    echo "R$ ".$array['valor']; ?>
+                                                    setlocale(LC_MONETARY, 'pt_BR');
+                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    ?>
                                                 </center>
                                             </th>
                                             <th>Juros:</th>
@@ -57,7 +59,9 @@
                                             <th>Valor:</th>
                                             <th class="col-xs-3">
                                                 <center><?php
-                                                    echo "R$ ".$array['valor']; ?>
+                                                    setlocale(LC_MONETARY, 'pt_BR');
+                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    ?>
                                                 </center>
                                             </th>
                                             <th>Juros:</th>
@@ -76,7 +80,9 @@
                                             <th>Valor:</th>
                                             <th class="col-xs-3">
                                                 <center><?php
-                                                    echo "R$ ".$array['valor']; ?>
+                                                    setlocale(LC_MONETARY, 'pt_BR');
+                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    ?>
                                                 </center>
                                             </th>
                                             <th>Juros:</th>
@@ -95,7 +101,9 @@
                                             <th>Valor:</th>
                                             <th class="col-xs-3">
                                                 <center><?php
-                                                    echo "R$ ".$array['valor']; ?>
+                                                    setlocale(LC_MONETARY, 'pt_BR');
+                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    ?>
                                                 </center>
                                             </th>
                                             <th>Juros:</th>
@@ -114,7 +122,9 @@
                                             <th>Valor:</th>
                                             <th class="col-xs-3">
                                                 <center><?php
-                                                    echo "R$ ".$array['valor']; ?>
+                                                    setlocale(LC_MONETARY, 'pt_BR');
+                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    ?>
                                                 </center>
                                             </th>
                                             <th>Juros:</th>
