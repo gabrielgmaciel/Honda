@@ -249,7 +249,7 @@
                     <br><br><br>
                     <div>
                         <center>
-                            <h4 class="price">Valor da entrada: <span>R<?php
+                            <h4 class="price">Valor da entrada: <span><?php
                                     if ($entrada == null)
                                     {
                                         echo "Sem entrada";

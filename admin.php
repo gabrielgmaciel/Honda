@@ -1,8 +1,12 @@
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <?php   include "header.php";
             include "conecta.php";
+<<<<<<< HEAD
             //include "recebeLogin.php";
             //protegeAdmin();
+=======
+
+>>>>>>> 812a6963f3ef00c529057f1c34259b8b39453640
     ?>
 <body> <br>
     <div><center><?php
@@ -38,7 +42,9 @@
                                             <th>Valor:</th>
                                             <th class="col-xs-3">
                                                 <center><?php
-                                                    echo "R$ ".$array['valor']; ?>
+                                                    setlocale(LC_MONETARY, 'pt_BR');
+                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    ?>
                                                 </center>
                                             </th>
                                             <th>Juros:</th>
@@ -57,7 +63,9 @@
                                             <th>Valor:</th>
                                             <th class="col-xs-3">
                                                 <center><?php
-                                                    echo "R$ ".$array['valor']; ?>
+                                                    setlocale(LC_MONETARY, 'pt_BR');
+                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    ?>
                                                 </center>
                                             </th>
                                             <th>Juros:</th>
@@ -76,7 +84,9 @@
                                             <th>Valor:</th>
                                             <th class="col-xs-3">
                                                 <center><?php
-                                                    echo "R$ ".$array['valor']; ?>
+                                                    setlocale(LC_MONETARY, 'pt_BR');
+                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    ?>
                                                 </center>
                                             </th>
                                             <th>Juros:</th>
@@ -95,7 +105,9 @@
                                             <th>Valor:</th>
                                             <th class="col-xs-3">
                                                 <center><?php
-                                                    echo "R$ ".$array['valor']; ?>
+                                                    setlocale(LC_MONETARY, 'pt_BR');
+                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    ?>
                                                 </center>
                                             </th>
                                             <th>Juros:</th>
@@ -114,7 +126,9 @@
                                             <th>Valor:</th>
                                             <th class="col-xs-3">
                                                 <center><?php
-                                                    echo "R$ ".$array['valor']; ?>
+                                                    setlocale(LC_MONETARY, 'pt_BR');
+                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    ?>
                                                 </center>
                                             </th>
                                             <th>Juros:</th>
