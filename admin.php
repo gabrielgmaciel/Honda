@@ -1,12 +1,6 @@
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <?php   include "header.php";
             include "conecta.php";
-<<<<<<< HEAD
-            //include "recebeLogin.php";
-            //protegeAdmin();
-=======
-
->>>>>>> 812a6963f3ef00c529057f1c34259b8b39453640
     ?>
 <body> <br>
     <div><center><?php
@@ -18,8 +12,8 @@
             <?php } ?>
         </center></div>
 <a href="users.php">
-    <button type="button" class="btn btn-success">Usuários</button>
-</a>
+    <button type="button" class="btn btn-success">Usuários</button></a>
+
 <br><br>
     <?php
         function listarForm($conexao)
@@ -43,7 +37,7 @@
                                             <th class="col-xs-3">
                                                 <center><?php
                                                     setlocale(LC_MONETARY, 'pt_BR');
-                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    echo "R$ " .number_format($array['valor'], 2);
                                                     ?>
                                                 </center>
                                             </th>
@@ -64,7 +58,7 @@
                                             <th class="col-xs-3">
                                                 <center><?php
                                                     setlocale(LC_MONETARY, 'pt_BR');
-                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    echo "R$ " .number_format($array['valor'], 2);
                                                     ?>
                                                 </center>
                                             </th>
@@ -85,7 +79,7 @@
                                             <th class="col-xs-3">
                                                 <center><?php
                                                     setlocale(LC_MONETARY, 'pt_BR');
-                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    echo "R$ " .number_format($array['valor'], 2);
                                                     ?>
                                                 </center>
                                             </th>
@@ -106,7 +100,7 @@
                                             <th class="col-xs-3">
                                                 <center><?php
                                                     setlocale(LC_MONETARY, 'pt_BR');
-                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    echo "R$ " .number_format($array['valor'], 2);
                                                     ?>
                                                 </center>
                                             </th>
@@ -127,7 +121,7 @@
                                             <th class="col-xs-3">
                                                 <center><?php
                                                     setlocale(LC_MONETARY, 'pt_BR');
-                                                    echo "R$ " . money_format('%i', $array['valor']);
+                                                    echo "R$ " .number_format($array['valor'], 2);
                                                     ?>
                                                 </center>
                                             </th>

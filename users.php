@@ -18,8 +18,8 @@
         </center></div>
 
     <a href="admin.php">
-        <button type="button" class="btn btn-success">Preço dos Veículos</button>
-    </a>
+        <button type="button" class="btn btn-success">Preço dos Veículos</button></a>
+
     <br><br>
     <center>
         <table class="table table-hover" width="80%">
