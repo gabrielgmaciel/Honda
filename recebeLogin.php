@@ -7,7 +7,6 @@ $pas="admin";
 //variáveis que recebem os dados de login.php
 $logon=isset($_POST['login']) ? $_POST['login'] : '';
 $senha=isset($_POST['senha']) ? $_POST['senha'] : '';
-
     if ($logon == $l1 && $senha == $pas)
     {
         header ("location: admin.php");

@@ -2,7 +2,7 @@
     <header>
         <?php   include "header.php";
                 include "s-login.php";
-                protegePagina();
+               //protegePagina();
         ?>
         <style>
 
@@ -201,15 +201,17 @@
                                 <?php
                                 $sql = "select valor from carros where id='Accord'";
                                 $result=mysqli_query($conexao,$sql);
+
                                 while ($array = mysqli_fetch_assoc($result)){
 
                                     setlocale(LC_MONETARY, 'pt_BR');
-                                    echo "R$ " . money_format('%i', $array['valor']);
+                                    echo "R$ " .number_format($array['valor'], 2);
+
 
                                 } ?></span></h4>
                         <div class="form-group form-inline">
                             <input type="hidden" name="id" value="Accord">
-                            <h4 class="sizes">Entrada:   <input type="number" class="form-control" name="entrada" placeholder="R$ 000.000,00"></h4>
+                            <h4 class="sizes">Entrada:   <input type="decimalFilder" class="form-control" name="entrada" placeholder="R$ 000.000,00"></h4>
                             <h4 class="sizes">Parcelas:
                                 <select class="form-control" name="parcelas">
                                     <option value="1">0x</option>
