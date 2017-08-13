@@ -1,8 +1,10 @@
 <html>
     <header>
-        <?php   include "header.php";
-                include "s-login.php";
-               //protegePagina();
+        <?php
+            include "header.php";
+            include "s-login.php";
+            include "conecta.php";
+            protegePagina();
         ?>
         <style>
 

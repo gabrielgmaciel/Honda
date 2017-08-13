@@ -259,10 +259,12 @@
                                         setlocale(LC_MONETARY, 'pt_BR');
                                         echo "R$ " . number_format($entrada, 2);
                                     }?></span></h4>
-                            <h4 class="price">Valor das parcelas: <span><?php echo $qtdparcelas." de "?></span><span><?php
-                                    echo  setlocale(LC_MONETARY, 'pt_BR');
+                            <h4 class="price">Valor das parcelas: <span><?php echo $qtdparcelas." de "?>
+                                    <?php setlocale(LC_MONETARY, 'pt_BR');
                                     echo "R$ " . number_format($parcelaComJuros, 2);
-                                    ?></span></h4>
+
+                                    ?>
+                                </span></h4>
                         </center>
                     </div>
                     <br><br><br><br>
